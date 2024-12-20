@@ -47,16 +47,59 @@ class AddSimpleProduct implements DataPatchInterface
     private const CATEGORY_NAME = 'Men';
     private const ATTRIBUTE_SET = 'Default';
 
+    /**
+     * @var ModuleDataSetupInterface
+     */
     protected ModuleDataSetupInterface $setup;
+
+    /**
+     * @var ProductInterfaceFactory
+     */
     protected ProductInterfaceFactory $productInterfaceFactory;
+
+    /**
+     * @var ProductRepositoryInterface
+     */
     protected ProductRepositoryInterface $productRepository;
+
+    /**
+     * @var State
+     */
     protected State $appState;
+
+    /**
+     * @var EavSetup
+     */
     protected EavSetup $eavSetup;
+
+    /**
+     * @var CategoryLinkManagementInterface
+     */
     protected CategoryLinkManagementInterface $categoryLink;
+
+    /**
+     * @var CategoryCollectionFactory
+     */
     protected CategoryCollectionFactory $categoryCollectionFactory;
+
+    /**
+     * @var StoreManagerInterface
+     */
     protected StoreManagerInterface $storeManager;
+
+    /**
+     * @var SourceItemInterfaceFactory
+     */
     protected SourceItemInterfaceFactory $sourceItemFactory;
+
+    /**
+     * @var SourceItemsSaveInterface
+     */
     protected SourceItemsSaveInterface $sourceItemsSaveInterface;
+
+    /**
+     * @var array
+     */
     protected array $sourceItems = [];
 
     /**
